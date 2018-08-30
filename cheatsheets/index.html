@@ -62,8 +62,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
@@ -258,34 +258,10 @@
       
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
-      Incident Response
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        Incident Response
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
     <a href="../malware/" title="Malware Analysis" class="md-nav__link">
       Malware Analysis
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -330,6 +306,54 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#systemd-systemctl" title="Systemd - systemctl" class="md-nav__link">
+    Systemd - systemctl
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-all-running-services" title="List all running services" class="md-nav__link">
+    List all running services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-a-service" title="Start a service" class="md-nav__link">
+    Start a service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-a-service" title="Stop a service" class="md-nav__link">
+    Stop a service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-a-service" title="Enable a service" class="md-nav__link">
+    Enable a service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#filesystem-hierarchy-standard" title="Filesystem Hierarchy Standard" class="md-nav__link">
     Filesystem Hierarchy Standard
   </a>
@@ -364,6 +388,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../scripts/" title="Scripts" class="md-nav__link">
+      Scripts
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -391,6 +427,54 @@
   
     <nav class="md-nav">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#systemd-systemctl" title="Systemd - systemctl" class="md-nav__link">
+    Systemd - systemctl
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-all-running-services" title="List all running services" class="md-nav__link">
+    List all running services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-a-service" title="Start a service" class="md-nav__link">
+    Start a service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-a-service" title="Stop a service" class="md-nav__link">
+    Stop a service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-a-service" title="Enable a service" class="md-nav__link">
+    Enable a service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#filesystem-hierarchy-standard" title="Filesystem Hierarchy Standard" class="md-nav__link">
@@ -426,6 +510,24 @@
 <li><a href="https://vim.rtorr.com">Vim</a></li>
 </ul>
 <h2 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h2>
+<h3 id="systemd-systemctl">Systemd - systemctl<a class="headerlink" href="#systemd-systemctl" title="Permanent link">&para;</a></h3>
+<p>The <code>systemctl</code> command is which is the central management tool for controlling the init system.</p>
+<h4 id="list-all-running-services">List all running services<a class="headerlink" href="#list-all-running-services" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>systemctl
+</pre></div>
+
+<h4 id="start-a-service">Start a service<a class="headerlink" href="#start-a-service" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>sudo systemctl start application
+</pre></div>
+
+<h4 id="stop-a-service">Stop a service<a class="headerlink" href="#stop-a-service" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>sudo systemctl stop application
+</pre></div>
+
+<h4 id="enable-a-service">Enable a service<a class="headerlink" href="#enable-a-service" title="Permanent link">&para;</a></h4>
+<h4 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h4>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units">DigitalOcean: How To Use Systemctl to Manage Systemd Services and Units</a></p>
+<p><a href="https://www.freedesktop.org/software/systemd/man/systemctl.html">FreeDesktop.org - systemctl</a></p>
 <h3 id="filesystem-hierarchy-standard">Filesystem Hierarchy Standard<a class="headerlink" href="#filesystem-hierarchy-standard" title="Permanent link">&para;</a></h3>
 <p>Linux filesystem root directories and their respective purposes. According to the <a href="http://refspecs.linuxfoundation.org/fhs.shtml">Filesystem Hierarchy Standard 3.0</a>.</p>
 <table>
