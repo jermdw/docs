@@ -13,7 +13,7 @@
         <meta name="description" content="netSEC Ninjas Dojo">
       
       
-        <link rel="canonical" href="https://j3rmbadger.com/docs/cheat/pwsh/">
+        <link rel="canonical" href="https://j3rmbadger.com/docs/cheat/windows/">
       
       
         <meta name="author" content="Master Splinter">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Powershell - j3rmdocs</title>
+        <title>Windows - j3rmdocs</title>
       
     
     
@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../#powershell-cheatsheet" tabindex="1" class="md-skip">
+      <a href="../../#windows-cheatsheet" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -130,7 +130,7 @@
                 j3rmdocs
               </span>
               <span class="md-header-nav__topic">
-                Powershell
+                Windows
               </span>
             
           
@@ -355,6 +355,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../pwsh/" title="Powershell" class="md-nav__link">
+      Powershell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -366,11 +378,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Powershell
+        Windows
       </label>
     
-    <a href="./" title="Powershell" class="md-nav__link md-nav__link--active">
-      Powershell
+    <a href="./" title="Windows" class="md-nav__link md-nav__link--active">
+      Windows
     </a>
     
       
@@ -384,8 +396,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#map-network-share" title="Map network share" class="md-nav__link">
-    Map network share
+  <a href="#microsoft-management-console-shortcuts" title="Microsoft Management Console Shortcuts" class="md-nav__link">
+    Microsoft Management Console Shortcuts
   </a>
   
 </li>
@@ -398,18 +410,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../windows/" title="Windows" class="md-nav__link">
-      Windows
-    </a>
   </li>
 
         
@@ -463,8 +463,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#map-network-share" title="Map network share" class="md-nav__link">
-    Map network share
+  <a href="#microsoft-management-console-shortcuts" title="Microsoft Management Console Shortcuts" class="md-nav__link">
+    Microsoft Management Console Shortcuts
   </a>
   
 </li>
@@ -486,28 +486,86 @@
               
                 
                 
-                <h1 id="powershell-cheatsheet">Powershell Cheatsheet<a class="headerlink" href="#powershell-cheatsheet" title="Permanent link">&para;</a></h1>
-<h2 id="map-network-share">Map network share<a class="headerlink" href="#map-network-share" title="Permanent link">&para;</a></h2>
-<p>Create a persisted mapped network drive<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></p>
-<div class="codehilite"><pre><span></span><span class="nb">New-PSDrive</span> <span class="n">-Name</span> <span class="s2">&quot;S&quot;</span> <span class="n">-Root</span> <span class="s2">&quot;\\Server01\Scripts&quot;</span> <span class="n">-Persist</span> <span class="n">-PSProvider</span> <span class="s2">&quot;FileSystem&quot;</span> <span class="n">-Credential</span> <span class="p">&lt;</span><span class="n">credshere</span><span class="p">&gt;</span>
-</pre></div>
-
-<p>Result:</p>
-<div class="codehilite"><pre><span></span>c:\&gt;net use
-
-Status       Local     Remote                    Network
----------------------------------------------------------
-OK           S:        \\Server01\Scripts        Microsoft Windows Network
-</pre></div>
-
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p><a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-psdrive?view=powershell-6">New-PSDrive Documentation</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
+                <h1 id="windows-cheatsheet">Windows Cheatsheet<a class="headerlink" href="#windows-cheatsheet" title="Permanent link">&para;</a></h1>
+<h2 id="microsoft-management-console-shortcuts">Microsoft Management Console Shortcuts<a class="headerlink" href="#microsoft-management-console-shortcuts" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th align="center">Microsoft Management Console</th>
+<th align="center">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">DSA.MSC</td>
+<td align="center">Active Directory</td>
+</tr>
+<tr>
+<td align="center">DSSITE.MSC</td>
+<td align="center">Active</td>
+</tr>
+<tr>
+<td align="center">DNSMGMT.MSC</td>
+<td align="center">DNS Manager</td>
+</tr>
+<tr>
+<td align="center">GPEDIT.MSC</td>
+<td align="center">Local Group Policy Console</td>
+</tr>
+<tr>
+<td align="center">GPMC.MSC</td>
+<td align="center">Group Policy Management Console</td>
+</tr>
+<tr>
+<td align="center">CERTSRV.MSC</td>
+<td align="center">Certification Authority Management</td>
+</tr>
+<tr>
+<td align="center">CERTTMPL.MSC</td>
+<td align="center">Certificate Template Management</td>
+</tr>
+<tr>
+<td align="center">CERTLM.MSC</td>
+<td align="center">Local Computer Certificates Store</td>
+</tr>
+<tr>
+<td align="center">COMPMGMT.MSC</td>
+<td align="center">Computer Management</td>
+</tr>
+<tr>
+<td align="center">DEVMGMT.MSC</td>
+<td align="center">Device Manager</td>
+</tr>
+<tr>
+<td align="center">DHCPMGMT.MSC</td>
+<td align="center">DHCP Manager</td>
+</tr>
+<tr>
+<td align="center">DISKMGMT.MSC</td>
+<td align="center">Disk Management</td>
+</tr>
+<tr>
+<td align="center">EVENTVWR.MSC</td>
+<td align="center">Event Viewer</td>
+</tr>
+<tr>
+<td align="center">PERFMON.MSC</td>
+<td align="center">Performance Monitor</td>
+</tr>
+<tr>
+<td align="center">SECPOL.MSC</td>
+<td align="center">Local Security Policy Console</td>
+</tr>
+<tr>
+<td align="center">FSMGMT.MSC</td>
+<td align="center">Shared Folders</td>
+</tr>
+<tr>
+<td align="center">WF.MSC</td>
+<td align="center">Windows Firewall with Advanced Security</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
@@ -528,7 +586,7 @@ OK           S:        \\Server01\Scripts        Microsoft Windows Network
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../nmap/" title="NMAP" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../pwsh/" title="Powershell" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -537,19 +595,19 @@ OK           S:        \\Server01\Scripts        Microsoft Windows Network
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                NMAP
+                Powershell
               </span>
             </div>
           </a>
         
         
-          <a href="../windows/" title="Windows" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../lablocal/" title="Lab.Local" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Windows
+                Lab.Local
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
